@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+	<groupId>activehealth.rulesapp</groupId>
+	<artifactId>scorerulestemplates</artifactId>
+
+	<name>scorerulestemplates</name>
+
+	<parent>
+		<groupId>activehealth</groupId>
+		<artifactId>score</artifactId>
+		<version>2017.05-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<dependencies>	
+        <dependency>
+            <groupId>activehealth.score</groupId>
+            <artifactId>scoremodel-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>activehealth.score</groupId>
+            <artifactId>scoremodel</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>activehealth.ruleappcommons</groupId>
+            <artifactId>commonmodel-api</artifactId>
+            <version>${ahm.core.version}</version>
+        </dependency>
+	
+	
+		<dependency>
+			<groupId>net.ahm.rulesapp</groupId>
+			<artifactId>rulesapptemplates</artifactId>
+			<version>${rulesapp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.ahm.rulesapp</groupId>
+			<artifactId>rulesapptemplates</artifactId>
+			<type>test-jar</type>
+			<scope>test</scope>
+			<version>${rulesapp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.ahm.rulesapp</groupId>
+			<artifactId>rulesrepository</artifactId>
+			<version>${rulesapp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.ahm.rulesapp</groupId>
+			<artifactId>rulesrepository</artifactId>
+			<version>${rulesapp.version}</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
