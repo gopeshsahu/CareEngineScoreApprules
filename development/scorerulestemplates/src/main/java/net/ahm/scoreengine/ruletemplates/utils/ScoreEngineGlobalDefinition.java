@@ -23,6 +23,7 @@ public enum ScoreEngineGlobalDefinition implements GlobalDefinitionIF {
 	 */
 	OUTPUT("$output", ScoreEngineOutputIF.class);
 
+	
 	private final String variableName;
 	private final TypeDescription type;
 
@@ -52,4 +53,6 @@ public enum ScoreEngineGlobalDefinition implements GlobalDefinitionIF {
 	public NamedVariableLiteralFragmentTemplate getNamedVariableLiteralFragmentTemplate() {
 		return new NamedVariableLiteralFragmentTemplate(getVariableName(), getType());
 	}
+	
+	
 }

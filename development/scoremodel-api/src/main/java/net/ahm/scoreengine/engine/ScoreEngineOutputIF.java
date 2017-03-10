@@ -31,5 +31,7 @@ public interface ScoreEngineOutputIF extends CommandOutputIF {
 	 * @param appendTextId
 	 */
 	public void setAppendTextId(int appendTextId);
+	
+	public void setCompliance(boolean isComliance);
 
 }

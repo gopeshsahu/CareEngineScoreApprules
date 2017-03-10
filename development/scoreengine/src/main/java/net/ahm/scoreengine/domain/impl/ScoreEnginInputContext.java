@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
+import net.ahm.careengine.domain.DrugEvent;
 import net.ahm.careengine.domain.MemberHealthState;
 import net.ahm.careengine.domain.member.MemberInfo;
 import net.ahm.scoreengine.engine.ScoreEngingInputContextIF;
@@ -56,5 +57,12 @@ public class ScoreEnginInputContext implements ScoreEngingInputContextIF {
 	}
 
 	private List <String> monitoredEventIds;
+
+
+	@Override
+	public DrugEvent getDrugEvent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

@@ -3,6 +3,7 @@ import java.util.Collection;
 import java.util.List;
 
 import net.ahm.careengine.command.CommandContextIF;
+import net.ahm.careengine.domain.DrugEvent;
 import net.ahm.careengine.domain.MemberHealthState;
 import net.ahm.careengine.domain.member.MemberInfo;
 
@@ -11,7 +12,7 @@ import net.ahm.careengine.domain.member.MemberInfo;
  * 
  * @author gsahu
  * @version 1.0
- * @created 27-Feb-2017 11:35:31 AM
+ * @created 08-Mar-2017 11:35:31 AM
  */
 public interface ScoreEngingInputContextIF extends CommandContextIF {
 
@@ -26,8 +27,16 @@ public interface ScoreEngingInputContextIF extends CommandContextIF {
 	 */
 	public MemberInfo getMemberInfo();	
 	
+
+	/**
+	 * @return a {@link DrugEvent} of {@link DrugEvent} to be used by
+	 *         the engine
+	 */
+	public DrugEvent getDrugEvent();
+
 		
 	public List<String> getMonitoredEventIds();
+	
 	public void setMonitoredEventIds(List<String> monitoredEventIds);
 
 }

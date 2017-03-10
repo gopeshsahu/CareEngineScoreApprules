@@ -13,7 +13,7 @@ import net.ahm.scoreengine.engine.ScoreEngineOutputIF;
 import net.ahm.scoreengine.engine.ScoreEngingInputContextIF;
 
 /**
- * The engine that processes the message notification logics.
+ * The engine that processes the score rules logics.
  * 
  * @author gsahu
  * @version 1.0

@@ -1,5 +1,7 @@
 package net.ahm.scoreengine.domain.impl;
 
+import java.util.Date;
+
 import net.ahm.careengine.domain.Marker;
 import net.ahm.careengine.domain.MemberHealthStateType;
 
@@ -25,4 +27,6 @@ public class MarkerImpl extends MemberHealthStateImpl implements Marker {
 	public String getFactNamespace() {
 		return MarkerImpl.class.getName();
 	}
+
+
 }

@@ -22,7 +22,8 @@ public class ScoreEngineOutput implements ScoreEngineOutputIF {
 	 */
 	public int appendTextId;
 
-
+	public boolean isCompliant;
+	
 	/**
 	 * {@inheritDoc}
 	 */
@@ -46,6 +47,12 @@ public class ScoreEngineOutput implements ScoreEngineOutputIF {
 	public MessageAppendText getMessageAppendText(){
 		// TODO implement the method
 		return null;
+	}
+
+	@Override
+	public void setCompliance(boolean isComliance) {
+
+		this.isCompliant = 	isComliance;	
 	}
 
 }
